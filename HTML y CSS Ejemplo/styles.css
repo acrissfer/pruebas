@@ -1,0 +1,105 @@
+.contact_form h2 {
+    background: none repeat scroll 0 0 #F3F3F3;
+    border-radius: 5px; /*borde del marco*/
+    color: #5CD053; /* color verde */
+    display: block; /* barra que rodea el titulo */
+    font-family: sans-serif; /* tipo de letra*/
+    font-size: 20px; /* tamaño de la barra*/
+    padding: 5px; /* distancia del texto y la barra*/
+    text-shadow: 1px 1px 1px #CCCCCC; /* sombra del texto y color de la letra */
+    width: 433px; /* ancho de la barra */
+}
+/*--- estilos para los ul y li del formulario ---*/
+.contact_form ul {
+    width:750px; /* posicionamiento horizontal de la caja de texto y botones*/
+    list-style-type:none; /* estilo nulo*/
+	margin:0px; /* 0 desplazamiento diagonal (separacion de todo el formulario o saltos de liena)*/
+	padding:0px; /* 0 Desplazamiento diagonal*/
+}
+.contact_form li{
+	padding:12px; /* separacion o distancia de cada campo de texto (especie de br)*/
+	border-bottom:1px solid #eef; /* separación de las barras horizontales entre las cajas de texto*/
+	position:relative; /* posicionamiento del formulario*/
+} 
+.contact_form label {
+    color: #555555; /* color del texto*/
+    display: inline-block; /* grueso de la letra*/
+    float: left; /* posicionamiento a la izquierda*/
+    font-family: sans-serif; /* tipo de letra*/
+    font-size: 12px; /* tamaño de la letra*/
+    font-weight: bold; /* tipo negrilla*/
+    margin-top: 3px; /* distancia desde el origen (eje y o altura)*/
+    padding: 3px; /* distancia desde el origen (eje x o desplazamiento horizontal)*/
+    width: 100px; /* ancho del texto (separación de la caja de texto)*/
+}
+.contact_form input {
+	height:20px;  /* altura de la caja*/
+	width:220px; /* ancho de la caja*/
+	padding:5px 8px; /* posicionamiento x y*/
+}
+.contact_form textarea {
+	padding:8px; /* posicionamiento*/
+	width:300px; /* ancho */
+}
+.contact_form button {
+	margin-left:200px; /* tamaño*/
+}
+
+/*----- estilos visuales de los elementos --------*/
+
+.contact_form input, .contact_form textarea { 
+	border:1px solid #aaa; /* bordes de la caja de texto*/
+	box-shdow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius:px; /* borde curvo*/
+	color: #888; /* color texto impreso en el textfield*/
+	font-size: 12px; /* tamaño del texto impreso*/
+	padding-right:30px;  /* Desplazamiento*/
+	-moz-transition: padding .50s; /* animacion del desplazamiento*/
+	-webkit-transition: padding .80s; /* animacion del desplazamiento*/
+	-o-transition: padding .25s;
+	transition: padding .90s; /* animacion del desplazamiento*/
+}
+
+contact_form input:focus, .contact_form textarea:focus {
+	background: #fff; 
+	border:1px solid #555; 
+	box-shadow: 0 0 3px #aaa; 
+	padding-right:80px;
+}
+
+/* === Estilos de Validacion === */	
+
+.contact_form input:required:valid, .contact_form textarea:required:valid { /* animacion valida*/
+	box-shadow: 0 0 5px #5cd053; /* borde*/
+	border-color: #28921f; /* color verde*/
+}
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid { /* animacion del desplazamiento*/
+	box-shadow: 0 0 5px #d45252; /* borde*/
+	border-color: #b03535 /* color rojo*/
+}
+
+
+/* === Estilos del boton de Envio === */
+button.submit {
+    padding: 9px 17px; /* tamaño del boton*/
+   font-family: Helvetica, Arial, sans-serif; /* tipo de letra*/
+   font-weight: bold; /* negrilla del texto*/
+   line-height: 1; /* altura del boton*/
+   color: #444; /* color boton*/
+   border: none; /* sin borde*/
+   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85); /* reflejo del texto del boton*/
+   background-image: -webkit-gradient(linear, 0% 0%, 70% 100%, from(#00f), to(#fff)); /* borde del boton*/
+   background-image: -moz-linear-gradient(0% 50% 80deg, #BBBBBB, #FFFFFF); /* degradación del boton */
+   background-color: #fff; /*color del boton*/
+   border-radius: 10px;
+  
+}
+button.submit:hover {
+	opacity:.60; /* opacidad al seleccionar el boton*/
+	cursor: pointer; /* activar el cambio de estado al seleccionar el boton*/
+	color: #fff; /*color */
+}
+button.submit:active {
+	border: 1px solid #222; /*border*/
+	box-shadow: 0 0 10px 20px #444 inset;  /* tamaño del boton al seleccionar el mouse over*/
+}
